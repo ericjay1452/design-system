@@ -19,6 +19,7 @@ export const GlobalStyles = createGlobalStyle `
  main {
     width : 90%;
     margin : 0 auto;
+    position : relative;
  }
 
 `
