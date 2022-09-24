@@ -1,7 +1,8 @@
+import PrimaryButton from "./components/Button/Button";
 
 function App() {
   return (
-<h2>hELOO WORLD</h2>
+<PrimaryButton>hELOO WORLD</PrimaryButton>
   );
 }
 
