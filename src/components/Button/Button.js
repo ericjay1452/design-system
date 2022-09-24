@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { defaultTheme, typescale } from "../../utils"
-// import {  } from "../../utils";
 
 const Button = styled.button`
 border-radius: 2px;
@@ -11,6 +10,14 @@ cursor: pointer;
 font-family: ${typescale.PrimaryFont};
 margin-right: 1rem;
 margin-left: 1rem;
+transition: background .2s linear, color .2s linear;
+
+ &:hover {
+   background-color: ${defaultTheme.primaryHoverColor};
+   color : ${defaultTheme.textColorOnPrimary}
+ }
+
+
 `
 
 export const PrimaryButton = styled(Button)`

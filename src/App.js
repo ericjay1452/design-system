@@ -6,7 +6,7 @@ import { GlobalStyles } from './utils';
 function App() {
   return (
     <>
-<PrimaryButton>Hi</PrimaryButton>
+<PrimaryButton disabled>Hi</PrimaryButton>
 <SecondaryButton>Hello</SecondaryButton>
 <TertiaryButton> World </TertiaryButton>
 <GlobalStyles />
