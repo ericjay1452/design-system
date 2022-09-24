@@ -13,23 +13,22 @@ margin-right: 1rem;
 margin-left: 1rem;
 `
 
-const PrimaryButton = styled(Button)`
+export const PrimaryButton = styled(Button)`
 background-color: ${defaultTheme.primaryColor};
 border: none;
 padding: 12px 24px;
 color: ${defaultTheme.textColorOnPrimary};
 font-size: ${typescale.header1};
+color : red;
 `
 
-const SecondaryButton = styled(Button)`
+export const SecondaryButton = styled(Button)`
  border: 2px solid ${defaultTheme.primaryColor};
 color: ${defaultTheme.primaryColor};
 
 `
 
-const TertiaryButton = styled(Button)`
+export const TertiaryButton = styled(Button)`
  border: 2px solid transparent;
  color : ${defaultTheme.primaryColor}
 `
-
-export default PrimaryButton

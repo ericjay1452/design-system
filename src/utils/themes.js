@@ -1,4 +1,4 @@
-import { red, green, neutral, blue } from "./colors";
+import { neutral, blue } from "./colors";
 import { PrimaryFont } from "./typography"
 
 export const defaultTheme = {

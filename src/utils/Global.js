@@ -7,13 +7,18 @@ export const GlobalStyles = createGlobalStyle `
 
  html {
     font-size : 100%;
-    font-family : sans-serif;
+    font-family : ${PrimaryFont};
  }
 
  *, * ::before, *::after {
     box-sizing : border-box;
     margin : 0;
     padding : 0
+ }
+
+ main {
+    width : 90%;
+    margin : 0 auto;
  }
 
 `
