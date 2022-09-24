@@ -5,9 +5,9 @@ import TertiaryButton from "./components/Button/Button";
 function App() {
   return (
     <>
-<PrimaryButton>hELOO WORLD</PrimaryButton>
-<SecondaryButton>hELOO WORLD</SecondaryButton>
-<TertiaryButton>hELOO WORLD</TertiaryButton>
+<PrimaryButton>Hi</PrimaryButton>
+<SecondaryButton>Hello</SecondaryButton>
+<TertiaryButton> World </TertiaryButton>
 </>
   );
 }

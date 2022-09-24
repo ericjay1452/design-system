@@ -1,45 +1,35 @@
 import styled from "styled-components";
-
-const PrimaryBlue = "#030086";
-
-const SecondaryBlue = "#030068";
-
-const TertiaryBlue = "navyblue"
+import { defaultTheme, typescale } from "../../utils"
+// import {  } from "../../utils";
 
 const Button = styled.button`
 border-radius: 2px;
 min-width: 100px;
 padding: 12px 24px;
-font-size: 1rem;
+font-size: ${typescale.paragraph};
 cursor: pointer;
-font-family: "Roboto Mono";
+font-family: ${typescale.PrimaryFont};
+margin-right: 1rem;
+margin-left: 1rem;
 `
 
 const PrimaryButton = styled(Button)`
-background-color: ${PrimaryBlue};
+background-color: ${defaultTheme.primaryColor};
 border: none;
 padding: 12px 24px;
-color: white;
-font-size: 1rem;
+color: ${defaultTheme.textColorOnPrimary};
+font-size: ${typescale.header1};
 `
 
 const SecondaryButton = styled(Button)`
- background-color: ${SecondaryBlue};
- border: none;
- outline : 2px solid green;
-padding: 12px 24px;
-color: white;
-font-size: 1rem;
-margin-left : 1rem;
+ border: 2px solid ${defaultTheme.primaryColor};
+color: ${defaultTheme.primaryColor};
 
 `
 
 const TertiaryButton = styled(Button)`
- background-color: ${TertiaryBlue};
- border: 2px groove orange;
-padding: 12px 24px;
-color: white;
-font-size: 1rem;
+ border: 2px solid transparent;
+ color : ${defaultTheme.primaryColor}
 `
 
 export default PrimaryButton
