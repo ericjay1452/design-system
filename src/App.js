@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { PrimaryButton } from "./components/Button/Button";
-import { SecondaryButton } from "./components/Button/Button";
-import { TertiaryButton } from "./components/Button/Button";
+// import { PrimaryButton } from "./components/Button/Button";
+// import { SecondaryButton } from "./components/Button/Button";
+// import { TertiaryButton } from "./components/Button/Button";
+import { SignUpModal } from "./components";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles, darkTheme, defaultTheme } from './utils';
 
@@ -36,9 +37,11 @@ function App() {
         justifyContent : "space-around",
         transition : ".9s background linear"
       }}>
-<PrimaryButton modifiers = {["small"]}>Hi</PrimaryButton>
+{/* <PrimaryButton modifiers = {["small"]}>Hi</PrimaryButton>
 <SecondaryButton modifiers = {"large"}>Hello</SecondaryButton>
-<TertiaryButton> World </TertiaryButton>
+<TertiaryButton> World </TertiaryButton> */}
+
+<SignUpModal />
 <GlobalStyles />
 </div>
 </ThemeProvider>

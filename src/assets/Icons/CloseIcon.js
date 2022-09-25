@@ -7,5 +7,5 @@ const CloseIconWrapper = styled.svg`
 `;
 
 export const CloseIcon = () => (
-  <CloseIconWrapper aria-hidden="true">...</CloseIconWrapper>
+  <CloseIconWrapper aria-hidden="true"> + </CloseIconWrapper>
 );

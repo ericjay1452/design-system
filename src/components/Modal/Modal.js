@@ -29,6 +29,19 @@ const SignUpText = styled.p`
   text-align: center;
 `;
 
+const CloseModalButton = styled.button`
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+`;
+
+
 export const SignUpModal = () => {
     return (
       <ModalWrapper>
@@ -40,6 +53,10 @@ export const SignUpModal = () => {
         <PrimaryButton onClick={() => console.log("You signed up!")}>
           Sign Up
         </PrimaryButton>
+
+        <CloseModalButton aria-label="Close Modal">
+            <CloseIcon />
+        </CloseModalButton>
       </ModalWrapper>
     );
   };
