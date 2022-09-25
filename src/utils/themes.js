@@ -8,7 +8,9 @@ export const defaultTheme = {
     textColorOnPrimary : neutral[100],
     textColor : neutral[400],
     textColorInverted : neutral[100],
-    PrimaryFont :PrimaryFont
+    PrimaryFont :PrimaryFont,
+    formElementBackground : neutral[100],
+    textOnFormElementBackground : neutral[600],
 }
 
 export const darkTheme = {
@@ -19,6 +21,8 @@ export const darkTheme = {
     textColor : neutral[400],
     textColorInverted : neutral[100],
     PrimaryFont :PrimaryFont,
+    formElementBackground : blue[100],
+    textOnFormElementBackground : neutral[100],
     
     backgroundColors : {
         light : neutral[100],

@@ -70,7 +70,8 @@ ${applyStyleModifiers(BUTTON_MODIFIERS)}
 
 export const TertiaryButton = styled(Button)`
  border: 2px solid transparent;
- color : ${props => props.theme.dark}
+ color : ${props => props.theme.dark};
+ background: ${props =>props.theme.dark};
 
  ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `
