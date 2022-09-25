@@ -5,15 +5,24 @@ import { useState } from "react";
 import { SignUpModal } from "./components";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles, darkTheme, defaultTheme } from './utils';
+import { useSpring, animated } from "react-spring"
 
 // P.S
 
 function App() {
   const [darkMode, setDarkMode ] = useState(false)
 
+  const transit = useSpring({
+    opacity : darkMode ? 0 : 1,
+    background : darkMode ? "black" : "#fff",
+    color : darkMode ? "yellow" : "black",
+    
+  })
+
   return (
     <ThemeProvider theme={ darkMode ? darkTheme : defaultTheme }>
 
+      <animated.span style={transit}>
       <button onClick={ ()=>setDarkMode(!darkMode)
       // Todo, i want to do automatic switching of mode on Button click
         // setTimeout( ()=> {setDarkMode(!darkMode)}, 9000)
@@ -27,6 +36,7 @@ function App() {
         cursor : "pointer",
         margin : "1rem"
       }}>{darkMode ? " Dark " : "Default"} </button>
+      </animated.span>
 
       <div style={{
         background : darkMode ? defaultTheme.textColorOnPrimary : darkTheme.backgroundColors.dark,
@@ -41,7 +51,7 @@ function App() {
 <SecondaryButton modifiers = {"large"}>Hello</SecondaryButton>
 <TertiaryButton> World </TertiaryButton> */}
 
-<SignUpModal />
+{/* <SignUpModal /> */}
 <GlobalStyles />
 </div>
 </ThemeProvider>
